@@ -1,76 +1,135 @@
 Employee Management System (EMS)
+
 📌 Project Overview
 
-The Employee Management System (EMS) is a backend web application designed to manage employee records securely and efficiently. It provides RESTful APIs for employee operations with JWT-based authentication and role-based access control.
+The Employee Management System (EMS) is a backend web application designed to manage employee records securely and efficiently. It provides RESTful APIs for employee management, with JWT-based authentication and role-based access control.
 
-This project demonstrates backend development skills using Java, Spring Boot, Spring Security, and MySQL, following industry-standard layered architecture.
+The project demonstrates backend development using Java, Spring Boot, Spring Security, and MySQL, following a modular, layered architecture.
 
 🚀 Features
 
-Secure authentication using JWT (JSON Web Tokens)
+🔐 JWT Authentication — Secure authentication using JSON Web Tokens.
 
-Role-based access control (Admin, Manager, Employee)
+👥 Role-Based Access Control — Access management for Admin, Manager, and Employee roles.
 
-Create, Read, Update, Delete (CRUD) operations for employees
+📝 Employee CRUD Operations — Create, read, update, and delete employee records.
 
-RESTful API design
+🔗 RESTful APIs — Structured endpoints for employee management.
 
-API documentation using Swagger/OpenAPI
+📚 API Documentation — API documentation using Swagger/OpenAPI.
 
-Database integration using Spring Data JPA & MySQL
+🗄️ Database Integration — Persistent data storage using Spring Data JPA and MySQL.
 
-Exception handling and validation
+✅ Validation & Exception Handling — Structured handling of invalid requests and application errors.
 
-Modular and scalable project structure
+🧩 Layered Architecture — Modular organization for maintainability and scalability.
 
-🛠️ Technologies Used
+🛠️ Technology Stack
 
-Language: Java
+Category
 
-Framework: Spring Boot
+Technologies
 
-Security: Spring Security, JWT
+Language
 
-ORM: Hibernate, Spring Data JPA
+Java
 
-Database: MySQL
+Framework
 
-Build Tool: Maven
+Spring Boot
 
-API Documentation: Swagger / OpenAPI
+Security
 
-Testing Tool: Postman
+Spring Security, JWT
 
-Version Control: Git & GitHub
+ORM & Persistence
+
+Hibernate, Spring Data JPA
+
+Database
+
+MySQL
+
+Build Tool
+
+Maven
+
+API Documentation
+
+Swagger / OpenAPI
+
+API Testing
+
+Postman
+
+Version Control
+
+Git, GitHub
 
 🧱 Project Architecture
 
-The application follows a layered architecture:
+The application follows a layered architecture, separating responsibilities into distinct layers.
 
-Controller Layer: Handles HTTP requests and responses
+Layer
 
-Service Layer: Contains business logic
+Responsibility
 
-Repository Layer: Handles database operations
+Controller Layer
 
-Entity Layer: Defines database models
+Handles incoming HTTP requests and generates responses.
 
-DTO Layer: Manages request and response objects
+Service Layer
 
-Security Layer: JWT authentication and authorization
+Implements business logic and application workflows.
+
+Repository Layer
+
+Manages database access and persistence operations.
+
+Entity Layer
+
+Defines the application's database models.
+
+DTO Layer
+
+Structures request and response data transfer objects.
+
+Security Layer
+
+Handles JWT authentication and authorization.
+
+This separation helps keep the code organized, maintainable, and easier to extend.
 
 🔐 Authentication & Authorization
 
-User authentication is handled using JWT tokens
+The application uses JSON Web Tokens (JWT) to authenticate users and protect secured endpoints.
 
-Token is generated on successful login
+Authentication Flow
 
-Secured endpoints require a valid JWT token
+A user submits their login credentials.
 
-Role-based authorization ensures restricted access:
+Upon successful authentication, a JWT is generated.
 
-ADMIN: Full access
+The client includes the token when accessing protected endpoints.
 
-MANAGER: Limited management operations
+The application validates the token before granting access to secured resources.
 
-EMPLOYEE: Read-only access
+User Roles
+
+Role
+
+Access Level
+
+ADMIN
+
+Full access to authorized employee management operations.
+
+MANAGER
+
+Limited employee management permissions.
+
+EMPLOYEE
+
+Read-only access to permitted resources.
+
+Access to endpoints is controlled according to the user's assigned role.
